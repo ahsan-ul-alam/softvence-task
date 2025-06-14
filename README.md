@@ -31,8 +31,8 @@ A clean and user-friendly **Course Management System** built using **Laravel**. 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/laravel-course-management.git
-   cd laravel-course-management
+   git clone https://github.com/ahsan-ul-alam/softvence-task.git
+   cd softvence-task
    ```
    ```bash
    composer install
