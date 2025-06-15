@@ -103,7 +103,7 @@ public function store(Request $request)
      */
     public function update(Request $request, string $id)
     {
-        //
+        return redirect()->route('dashboard')->with('error', 'can not update course.Not permitted');
     }
 
     /**

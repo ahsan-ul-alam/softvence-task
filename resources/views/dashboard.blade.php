@@ -11,7 +11,9 @@
                 <div class="p-6 text-gray-900">
 
                     <h3 class="text-lg font-bold mb-4">Courses</h3>
-
+                    @if (session('error'))
+                        <p class="text-red-500">{{ session('error') }}</p>
+                    @endif
                     <table class="min-w-full border text-left text-sm font-light">
                         <thead class="border-b bg-gray-100">
                             <tr>
@@ -32,7 +34,7 @@
                                     <td class="px-6 py-4">{{ $course->duration }}</td>
                                     <td class="px-6 py-4 capitalize">{{ $course->level }}</td>
                                     <td class="px-6 py-4">
-                                        <a href="{{ route('courses.edit', $course->id) }}"
+                                        <a @readonly(true) href="{{ route('courses.edit', $course->id) }}"
                                             class="text-blue-600 hover:underline">Edit</a>
                                     </td>
 
