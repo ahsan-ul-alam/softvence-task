@@ -43,17 +43,18 @@ A clean and user-friendly **Course Management System** built using **Laravel**. 
    php artisan key:generate
    ```
 
-Update .env file with database credentials:
+Update .env file with database credentials: <br>
 
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_DATABASE=your_database <br>
+DB_USERNAME=your_username <br>
+DB_PASSWORD=your_password <br>
 
 ```bash
 php artisan migrate
 ```
 
 ```bash
+php artisan db:seed
 php artisan serve
 ```
 
